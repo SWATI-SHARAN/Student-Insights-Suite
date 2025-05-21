@@ -1,0 +1,18 @@
+/* Import Google Fonts - Orbitron */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', monospace !important;
+    color: #4B0082 !important;
+}
+
+.stButton>button {
+    background-color: #4B0082;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.stButton>button:hover {
+    background-color: #6A5ACD;
+}

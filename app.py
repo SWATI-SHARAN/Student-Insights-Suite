@@ -4,10 +4,31 @@ from utils.analyzer import get_stats, plot_histograms
 from utils.admission import calculate_percentile
 from utils.dropout import train_and_predict
 
-st.set_page_config(page_title="Student Insights Suite", layout="wide")
+# --- PAGE SETUP ---
+st.set_page_config(page_title="Student Insights Suite", page_icon="📊", layout="wide")
+
+# --- LOAD CUSTOM CSS ---
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+local_css("assets/custom_style.css")
+
+# --- SIDEBAR ---
 st.sidebar.title("🎓 Student Insights Suite")
 app_choice = st.sidebar.radio("Choose Tool:", ["📊 Score Analyzer", "📈 Admission Estimator", "🌳 Dropout Predictor"])
 
+# --- HEADER (LOGO + TITLE) ---
+col1, col2 = st.columns([1, 6])
+with col1:
+    st.image("logo.png", width=80)
+with col2:
+    st.markdown("<h1 style='color:#4B0082; font-family:Orbitron, monospace;'>Student Insights Suite</h1>", unsafe_allow_html=True)
+    st.markdown("### Analyze Scores, Estimate Admissions, and Predict Dropouts", unsafe_allow_html=True)
+
+st.write("---")  # separator
+
+# --- MAIN APP LOGIC ---
 if app_choice == "📊 Score Analyzer":
     st.title("📊 Student Score Analyzer")
     uploaded_file = st.file_uploader("Upload CSV of student scores", type="csv")
