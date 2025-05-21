@@ -1,8 +1,11 @@
-Attendance,AssignmentsCompleted,ParentalSupport,StudyHours,Dropout
-85,10,1,12,0
-40,3,0,2,1
-75,8,1,10,0
-30,1,0,1,1
-90,9,1,11,0
-50,4,0,4,1
-60,6,1,6,0
+Attendance(%),No. of Assignments(0 to 10),Participation Score(1 to 10),CGPA(0.0 to 10.0 scale),Family Income(0=Low,1=Med,2=High,3=Very High),Interest(1 to 10),Backlogs(0 or more),Dropout(0 = Continue, 1 = Dropout)
+85,8,7,8.2,2,7,0,0
+60,4,5,5.5,1,4,2,1
+90,9,8,9.0,3,9,0,0
+70,5,6,6.5,1,5,1,0
+50,3,4,4.0,0,3,3,1
+80,7,7,7.8,2,6,0,0
+65,6,5,6.0,1,5,2,1
+95,10,9,9.5,3,10,0,0
+55,4,4,5.0,0,4,2,1
+75,7,6,7.2,2,6,1,0
