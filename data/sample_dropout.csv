@@ -1,4 +1,4 @@
-Attendance(%),No. of Assignments(0 to 10),Participation Score(1 to 10),CGPA(0.0 to 10.0 scale),Family Income(0=Low,1=Med,2=High,3=Very High),Interest(1 to 10),Backlogs(0 or more),Dropout(0 = Continue, 1 = Dropout)
+Attendance(%),No. of Assignments(0 to 10),Participation Score(1 to 10),CGPA(0.0 to 10.0 scale),Family Income(0=Low 1=Med 2=High 3=Very High),Interest(1 to 10),Backlogs(0 or more),Dropout
 85,8,7,8.2,2,7,0,0
 60,4,5,5.5,1,4,2,1
 90,9,8,9.0,3,9,0,0
